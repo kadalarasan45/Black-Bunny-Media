@@ -1,0 +1,242 @@
+/* Base styles for body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000 !important;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Custom styling for Navbar */
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: 180px;
+}
+
+.phone {
+  color: #F37820;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.left-side img {
+  width: 820px;
+  height: 670px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-side h1 {
+  font-size: 6rem;
+  margin-bottom: 40px;
+  color: #F37820;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.right-side h2{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-input {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-input input[type="email"] {
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  width: 70%;
+}
+
+.subscribe-input button {
+  border: none;
+  padding: 10px;
+  background-color: #F37820;
+  color: white;
+  cursor: pointer;
+}
+::-webkit-input-placeholder { 
+  color: black;
+  background: #F37820;
+  font-weight: 400;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+
+  .right-side h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .right-side h2{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .left-side img{
+    width: 660px;
+    height: 500px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .subscribe-input input {
+    width: 90%; 
+  }
+  .phone{
+    align-items: center;
+  }
+}
+
+
+
+.field {
+  margin-bottom: 10px;
+  justify-content: center;
+  padding-left: 10%;
+
+}
+
+.field label {
+  display: block;
+  font-size: 30px;
+  color: #F37820;
+  font-weight: 400;
+  text-align: left;
+}
+
+.field input {
+  display: block;
+  min-width: 90%;
+  height: 44px;
+  line-height: 1.5;
+  font-size: 14px;
+  border: 3px solid #F37820; border-radius: 10px;
+  background-color: #000;
+  color: white;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 15px 30px;
+  font-size: 14px;
+  background-color: #F37820;
+  color: #fff;
+  border: 2px solid #000; border-radius: 20px;
+  margin-left: 40%;
+}
+
+.btn-primary {
+  background-color: #F37820; /* Matching the theme color */
+  border-color: #F37820;
+}
+
+.btn-primary:hover {
+  background-color: #d36319; /* Darker shade on hover */
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 764px) {
+
+  .navbar-brand img{
+    height: 80px;
+    width: 130px;
+  }
+
+  /* Center the left-side image */
+  .left-side {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adds space between image and content */
+  }
+
+  .left-side img {
+    width: 100%; /* Make the image responsive */
+    max-width: 700px; /* Limit the maximum width */
+    height: 100%; /* Maintain aspect ratio */
+    padding-left: 37%; /* Remove left padding */
+  }
+
+  /* Adjust right-side content */
+  .right-side {
+    text-align: center; /* Center text */
+  }
+
+  .right-side h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .right-side h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  /* Adjust subscribe input */
+  .subscribe-input input {
+    width: 90%;
+  }
+
+  /* Center the phone info in navbar */
+  .phone {
+    justify-content: center; /* Center items horizontally */
+    width: 100%; /* Ensure it takes full width */
+    margin-top: 10px; /* Add some top margin */
+  }
+
+  /* Center navbar items when toggled */
+  .navbar-collapse {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  /* Adjust form fields for better responsiveness */
+  .field {
+    margin: 0 auto 10px auto; /* Center the fields and add bottom margin */
+    max-width: 90%; /* Limit the width */
+    text-align: left; /* Align labels to the left */
+    padding-left: 0;
+  }
+
+  .field label {
+    font-size: 1rem;
+    color: #F37820;
+    text-align: left;
+  }
+
+  .field input {
+    width: 100%; /* Make inputs full width */
+    min-width: unset; /* Remove min-width */
+  }
+
+  input[type="submit"] {
+    margin: 20px auto 0 auto; /* Center the button and add top margin */
+    display: block;
+  }
+
+  /* Optional: Adjust navbar padding */
+  .navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
