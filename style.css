@@ -236,7 +236,7 @@ input[type="submit"] {
 
   /* Optional: Adjust navbar padding */
   .navbar {
-    padding-left: 0px;
+    padding-left: 100px;
     padding-right: 10px;
   }
 }
